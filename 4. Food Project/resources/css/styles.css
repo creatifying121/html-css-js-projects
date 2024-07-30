@@ -22,6 +22,7 @@ html {
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/hero-min.jpg");
+  background-attachment: fixed;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -315,3 +316,43 @@ h3 {
   border-bottom: none;
 }
 /* cities styling end */
+
+/* testimonials */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../img/back-customers-min.jpg");
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 14px;
+  position: relative;
+}
+
+cite {
+  font-size: 90%;
+  display: block;
+  margin-top: 25px;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -3px;
+}
+/* testimonials end */
