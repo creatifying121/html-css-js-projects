@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="vendors/css/grid.min.css" />
     <link rel="stylesheet" href="vendors/css/normalize.min.css" />
     <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
-    <link rel="stylesheet" href="vendors/css/animate.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Third party css files end -->
 
     <!-- Project css files -->
@@ -34,10 +35,10 @@
           <img src="./resources/img/logo-white.png" alt="Logo" class="logo" />
 
           <ul class="main-nav">
-            <li><a href="#">Food Delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="#features">Food Delivery</a></li>
+            <li><a href="#hiw">How it works</a></li>
+            <li><a href="#city">Our cities</a></li>
+            <li><a href="#signup">Sign Up</a></li>
           </ul>
         </div>
       </nav>
@@ -45,14 +46,14 @@
       <div class="hero-text-box">
         <h1>Goodbye junk food <br />Hello super healthy food</h1>
 
-        <a href="#" class="btn btn-full">I'm Hungry</a>
-        <a href="#" class="btn btn-ghost">Show me more</a>
+        <a href="#plans" class="btn btn-full">I'm Hungry</a>
+        <a href="#features" class="btn btn-ghost">Show me more</a>
       </div>
     </header>
     <!-- header end -->
 
     <!-- features -->
-    <section class="section-features">
+    <section class="section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -107,7 +108,7 @@
     <!-- features end -->
 
     <!-- favorite meals -->
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
       <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo">
@@ -157,7 +158,12 @@
     <!-- favorite meals end -->
 
     <!-- how it works -->
-    <section class="section-steps">
+    <section
+      class="section-steps"
+      id="hiw"
+      data-aos="fade-in"
+      data-aos-duration="2000"
+    >
       <div class="row">
         <h2>How it works &mdash; Simple as 1,2,3</h2>
       </div>
@@ -168,10 +174,16 @@
             src="./resources/img/app-iPhone.png"
             alt="Phone"
             class="app-screen"
+            data-aos="slide-right"
+            data-aos-duration="2000"
           />
         </div>
 
-        <div class="col span-1-of-2 steps-box">
+        <div
+          class="col span-1-of-2 steps-box"
+          data-aos="slide-left"
+          data-aos-duration="2000"
+        >
           <div class="works-step">
             <div>1</div>
             <p>
@@ -207,7 +219,12 @@
     <!-- how it works end -->
 
     <!-- cities -->
-    <section class="section-cities">
+    <section
+      class="section-cities"
+      id="city"
+      data-aos="fade-in"
+      data-aos-duration="2000"
+    >
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -292,7 +309,11 @@
     <!-- cities end -->
 
     <!-- testimonials -->
-    <section class="section-testimonials">
+    <section
+      class="section-testimonials"
+      data-aos="fade-in"
+      data-aos-duration="2000"
+    >
       <div class="row">
         <h2>Our customers can't live without us</h2>
       </div>
@@ -339,7 +360,12 @@
     <!-- testimonials end -->
 
     <!-- sign up -->
-    <section class="section-plans">
+    <section
+      class="section-plans"
+      id="plans"
+      data-aos="fade-in"
+      data-aos-duration="2000"
+    >
       <div class="row">
         <h2>Start eating healthy today</h2>
       </div>
@@ -347,7 +373,7 @@
       <div class="row">
         <div class="col span-1-of-3">
           <div class="plan-box">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
               <h3>Premium</h3>
               <p class="plan-price">$399 <span>per month</span></p>
               <p class="plan-price-meal">That's only $13.905 per meal</p>
@@ -495,7 +521,12 @@
     <!-- sign up end -->
 
     <!-- contact form -->
-    <section class="section-form">
+    <section
+      class="section-form"
+      id="signup"
+      data-aos="fade-in"
+      data-aos-duration="2000"
+    >
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
@@ -606,8 +637,7 @@
     <!-- footer end -->
 
     <!-- external scripts -->
-    <script src="vendors/js/jquery-3.3.1.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -616,6 +646,10 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="resources/js/index.js"></script>
     <!-- external scripts end -->
   </body>
